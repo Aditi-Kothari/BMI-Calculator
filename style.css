@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background:linear-gradient(to right, rgb(233, 165, 233),rgb(228, 214, 228))  ;
-    background-size: cover;
-    
+    background:linear-gradient(to right, rgb(233, 165, 233),rgb(228, 214, 228))  ;    
 }
 .container{
     width: 90%;
@@ -90,6 +88,7 @@ input{
     outline: none;
     margin-bottom: 8px;
     font-family: 'Exo 2', sans-serif;
+    width:100%;
     
 }
 h5{
