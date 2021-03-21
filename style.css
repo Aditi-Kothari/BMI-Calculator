@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300;1,400&family=Roboto+Slab&display=swap');
+ 
+ *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right, rgb(233, 165, 233),rgb(228, 214, 228))  ;
+    background-size: cover;
+    
+}
+.container{
+    width: 90%;
+    margin: 50px auto;
+}
+.heading{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-shadow: 5px 10px 10px  rgb(90, 5, 90);
+    font-family: 'Roboto Slab', serif;
+   
+}
+.card{
+    width: 25%;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    background-color: black;
+    box-shadow: 5px 10px 10px rgb(90, 5, 90);
+}
+.card-header{
+    text-align: center;
+    padding: 50px 10px;
+    background:linear-gradient(to right,blue,pink) ;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+.card-body{
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.07);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+p{
+    font-size: 20px;
+}
+.list{
+    margin: 5px 15px;
+}
+.list li{
+    margin: 10px;
+    text-align: left;
+    font-size: 19px;
+    list-style-type: square;
+    
+}
+img{
+    height: 80px;
+    width: 80px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+label{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-right: 10px;
+    
+}
+
+input{
+    font-size: 14px;
+    padding: 10px 5px;
+    text-align: center;
+    margin-top: 10px;
+    outline: none;
+    margin-bottom: 8px;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+h5{
+    margin-top: 80px;
+}
+button{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 5px 5px;
+    background-color:  rgb(233, 165, 233);
+    color:black;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+button:hover{
+    background-color: rgba(88, 2, 62, 0.548);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+    .card{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .container{
+        width: 100%;
+    }
+    .heading{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .card{
+        width: 80%;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+         <div class="heading">
+             <h1>Body Mass Index</h1>
+         </div>
+     </div>
+
+     <div class="row">
+         <div class="card">
+             <div class="card-header">
+                 <h1>BMI</h1>
+             </div>
+             <div class="card-body">
+                 <p>The BMI is a convenient rule of thumb used to broadly categorize a person as underweight, normal weight, overweight, or obese based on tissue mass (muscle, fat, and bone) and height.</p>
+                <br><br>
+                 <h2>Know Your BMI Below</h2>
+                </div>
+         </div>
+
+     <div class="card">
+        <div class="card-header">
+            <h1>BMI Calculator</h1>
+        </div>
+        <div class="card-body">
+           <form>
+               <label>Height:</label>
+               <input type="text" placeholder="Enter Your Height in Ft" id="height">
+               <label>Weight:</label>
+               <input type="text" placeholder="Enter Your Weight in Kg" id="weight">
+               <label >Your BMI:</label>
+               <input type="text" readonly id="ans" placeholder="Your BMI">
+           </form>
+           <button type="submit" onclick="getbmivalue()">Click Here</button>
+           <h5>Normal BMI lies between 18.5 to 25.</h5>
+        </div>
+        </div>
+   
+        <div class="card">
+        <div class="card-header">
+            <h1>BMI Guide</h1>
+        </div>
+        <div class="card-body">
+             <ul class="list">
+                 <li>If Your BMI is less than 18.5,you fall within the underweight range.</li>
+                 <li>If Your BMI is in between 18.5 to 25,you fall within the normal. </li>
+                 <li>If Your BMI lies between 25 to 30 ,you fall within the overweight range.</li>
+                 <li>If Your BMI is 30 or higher,it falls within the obesity range.</li>
+             </ul>
+        </div>
+    </div>
+   </div> 
+
+      <script>
+       function getbmivalue(){
+        var weight=document.getElementById('weight').value;
+       var height=document.getElementById('height').value;
+     if(height==""){
+         alert("Plese enter your height")
+     } else if(weight==""){
+         alert("Plese enter the weight")
+     }else {
+       height = height * 12;
+       height = height * 0.025; 
+
+       var bmi=weight / (height*height);
+       document.getElementById("ans").value=Math.round(bmi);
+     }
+
+       }
+     </script>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
